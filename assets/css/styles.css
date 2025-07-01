@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2d4f2b;
+  margin: 0;
+  padding: 0;
+  color: white;
+  min-height: 100vh;
+}
+/* boton de whatsapp */
+.whatsapp-btn {
+  text-decoration: none;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 50px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a2d1a;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  border-radius: 100px;
+  height: 80px;
+}
+main {
+  background-color: #2d4f2b;
+  height: 100vh;
+}
+.content-principal {
+  background-image: url("../img/Principal.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 500px;
+}
+header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+header .btn {
+    color: white;
+  background-color: #2D4F2B;
+}
+header .rrss a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:30em;
+    text-align: center;
+   
+}
+.hero h1 {
+  color: white;
+  font-size: 6em;
+  font-weight: bold;
+}
+#navbarNav ul li a {
+  color: white;
+}
+/* Para preguntas frecuentes */
+.preguntasFrecuentes {
+  background-color: white;
+  padding: 20px;
+  border: 12px solid #192E1A;
+  border-radius: 10px;
+  margin: 20px auto;
+ 
+}
+.titulo-preguntasFrecuentes {
+  color: #2c3e50;
+  text-align: center;
+  margin: 0px 0;
+}
+
+.faq-container {
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.faq-question {
+  font-weight: bold;
+  color: #3498db;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.faq-answer {
+  padding: 15px;
+  display: none;
+}
+
+.faq-answer.show {
+  display: block;
+}
+.faq-answer {
+  color: black;
+  border-radius: 5px;
+  margin-top: 10px;
+}
