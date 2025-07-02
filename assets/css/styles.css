@@ -61,7 +61,7 @@ nav {
 }
 main {
   background-color: #2d4f2b;
-  height: 100vh;
+  min-height: 100vh;
 }
 .content-principal {
   background-image: url("../img/Principal.png");
@@ -76,8 +76,8 @@ header {
   justify-content: space-between;
 }
 header .btn {
-    color: white;
-  background-color: #2D4F2B;
+  color: white;
+  background-color: #2d4f2b;
 }
 header .rrss a {
   color: white;
@@ -85,13 +85,12 @@ header .rrss a {
   margin-right: 20px;
 }
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height:30em;
-    text-align: center;
-   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30em;
+  text-align: center;
 }
 .hero h1 {
   color: white;
@@ -102,13 +101,23 @@ header .rrss a {
   color: white;
 }
 /* Para preguntas frecuentes */
-.preguntasFrecuentes {
-  background-color: white;
+.ContenedorCentral {
+  background-color: #521c0d;
   padding: 20px;
-  border: 12px solid #192E1A;
+  border: 12px solid #192e1a;
   border-radius: 10px;
   margin: 20px auto;
- 
+}
+.form-btn {
+  background: #2D4F2B;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+.form-btn:hover {
+  background: #192e1a;
+  color: white;
+  transition: background-color 0.3s ease;
 }
 .titulo-preguntasFrecuentes {
   color: #2c3e50;
@@ -144,7 +153,64 @@ header .rrss a {
   display: block;
 }
 .faq-answer {
-  color: black;
+  color: white;
   border-radius: 5px;
   margin-top: 10px;
+}
+
+/* formulario */
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.formulario {
+  padding: 20px;
+  justify-content: space-around;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+/* Estilos personalizados para el menú del carrusel */
+.carrusel-nav {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.carrusel-nav .nav-link {
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.carrusel-nav .nav-link:hover {
+  color: grey;
+  border: none;
+}
+
+.carrusel-nav .nav-link.active {
+  color: white;
+  background: transparent;
+  border: none;
+}
+
+.carrusel-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+/* Ocultar indicadores originales del carrusel */
+.carousel-indicators {
+  display: none !important;
 }
