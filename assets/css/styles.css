@@ -54,10 +54,19 @@ nav {
   background-color: #1a2d1a;
   padding: 10px;
   text-align: center;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: -180px;
   border-radius: 100px;
   height: 80px;
+}
+#navbarNav {
+  position: absolute;
+  top: 55px;
+}
+.contenedor-menu {
+  z-index: 999;
+  position: relative;
+  top: 0px;
 }
 main {
   background-color: #2d4f2b;
@@ -68,7 +77,7 @@ main {
   background-size: cover;
   background-position: center;
   width: 100vw;
-  height: 500px;
+  height: 300px;
 }
 header {
   padding-top: 20px;
@@ -96,6 +105,8 @@ header .rrss a {
   color: white;
   font-size: 6em;
   font-weight: bold;
+  position: relative;
+  top: -150px;
 }
 #navbarNav ul li a {
   color: white;
@@ -103,13 +114,13 @@ header .rrss a {
 /* Para preguntas frecuentes */
 .ContenedorCentral {
   background-color: #521c0d;
-  padding: 20px;
+  padding: 0px;
   border: 12px solid #192e1a;
   border-radius: 10px;
   margin: 20px auto;
 }
 .form-btn {
-  background: #2D4F2B;
+  background: #2d4f2b;
   color: white;
   margin-top: 20px;
   padding: 10px 20px;
@@ -164,10 +175,10 @@ header .rrss a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 0px;
 }
 .formulario {
-  padding: 20px;
+  padding: 0px;
   justify-content: space-around;
 }
 .form-group {
@@ -213,4 +224,70 @@ header .rrss a {
 /* Ocultar indicadores originales del carrusel */
 .carousel-indicators {
   display: none !important;
+}
+/* menu principal */
+.custom-toggler {
+  border: none;
+  background: white;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+}
+.nav-link:hover {
+  color: #0d6efd;
+}
+.navbar-collapse {
+  margin-top: 20px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #192e1a;
+  z-index: 1000;
+  border-radius: 5px;
+}
+.nav-item {
+  border-radius: 10px;
+  padding: 0.5rem 0;
+}
+.navbar-nav {
+  border-radius: 5px;
+}
+/* pantallas grandes */
+@media (min-width: 768px) {
+  .content-principal {
+    background-image: url("../img/Principal.png");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 500px;
+  }
+  .navbar-collapse {
+    position: fixed;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .content-principal {
+    background-image: url("../img/Principal.png");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a2d1a;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    border-radius: 100px;
+    height: 80px;
+  }
+  #navbarNav {
+    position: relative;
+    top: -10px;
+  }
 }
