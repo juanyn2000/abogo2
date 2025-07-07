@@ -18,6 +18,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <!-- Botón de WhatsApp -->
@@ -33,18 +37,27 @@
     <div class="container-fluid content-principal">
       <header class="container">
         <div class="rrss">
-          <a href="https://www.instagram.com/abogo.cl/" target="_blank">Instagram</a>
+          <a href="https://www.instagram.com/abogo.cl/" target="_blank"
+            >Instagram</a
+          >
           <a href="https://www.facebook.com" target="_blank">Facebook</a>
           <a href="https://wa.link/woiaem" target="_blank">WhatsApp</a>
         </div>
-        <button type="button" class="btn btn-lg d-none d-lg-block" href="https://wa.link/woiaem" target="_blank">¡Te escuchamos!</button>
+        <button
+          type="button"
+          class="btn btn-lg d-none d-lg-block"
+          href="https://wa.link/woiaem"
+          target="_blank"
+        >
+          ¡Te escuchamos!
+        </button>
       </header>
       <div
         class="d-flex flex-column align-items-center justify-content-end py-4 hero"
       >
         <h1 class="text-center text-white mb-5">Abogo</h1>
         <nav
-          class="navbar navbar-expand-lg col-10 col-md-5 justify-content-center border-0 "
+          class="navbar navbar-expand-lg col-10 col-md-5 justify-content-center border-0"
         >
           <div
             class="container-fluid contenedor-menu d-flex justify-content-center align-items-center flex-column"
@@ -58,7 +71,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-             Menú
+              Menú
             </button>
             <!-- contenido del navbar -->
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -75,7 +88,12 @@
                   <a class="nav-link" href="#">Servicios</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contacto">Contacto</a>
+                  <a
+                    class="nav-link"
+                    href="#staticBackdrop"
+                    data-bs-toggle="modal"
+                    >Contacto</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="preguntasFrecuentes.html"
@@ -98,14 +116,14 @@
         >
           <a
             href="#"
-            class="nav-link carrusel-tab active col-5 "
+            class="nav-link carrusel-tab active col-5"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="0"
             >Contáctanos</a
           >
           <a
             href="#"
-            class="nav-link carrusel-tab col-5 "
+            class="nav-link carrusel-tab col-5"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="1"
             >Preguntas frecuentes</a
@@ -115,7 +133,7 @@
         <!-- Carrusel -->
         <div
           id="carouselExampleIndicators"
-          class="carousel slide carousel-fade"
+          class="carousel carousel-fade"
           data-bs-interval="false"
         >
           <div class="carousel-inner">
@@ -125,7 +143,7 @@
                 <h2 class="form-title">Contáctanos</h2>
                 <form
                   action="submit"
-                  class="formulario row text-white col-12 col-md-12 "
+                  class="formulario row text-white col-12 col-md-12"
                 >
                   <div class="form-group col-12 col-md-3 col-lg-3">
                     <label for="nombre">Nombre</label>
@@ -246,9 +264,7 @@
                         required
                       ></textarea>
                     </div>
-                    <button type="submit" class="form-btn btn">
-                      Enviar
-                    </button>
+                    <button type="submit" class="form-btn btn">Enviar</button>
                   </div>
                 </form>
               </div>
@@ -256,7 +272,9 @@
 
             <!-- Diapositiva 1 - Preguntas frecuentes -->
             <div class="carousel-item">
-              <h2 class="titulo-preguntasFrecuentes text-white mb-5">Preguntas Frecuentes</h2>
+              <h2 class="titulo-preguntasFrecuentes text-white mb-5">
+                Preguntas Frecuentes
+              </h2>
 
               <div class="faq-container container">
                 <div class="faq-item">
@@ -324,6 +342,160 @@
         </div>
       </div>
     </main>
+    <!-- modal de contacto -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="container form-content">
+            <h2 class="form-title">Contáctanos</h2>
+            <form
+              action="submit"
+              class="formulario row text-white col-12 col-md-12"
+            >
+              <div class="form-group col-12 col-md-3 col-lg-3">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control mt-1 mb-3 col-12"
+                  id="nombre"
+                  placeholder="Ingresa tu nombre"
+                  required
+                />
+                <label for="tel" class="form-label">Teléfono</label>
+                <input
+                  type="tel"
+                  class="form-control mt-1 mb-3"
+                  id="tel"
+                  placeholder="+569"
+                  required
+                />
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input
+                  type="email"
+                  class="form-control mt-1 mb-3"
+                  id="email"
+                  placeholder="Ingresa tu correo electrónico"
+                  required
+                />
+                <label for="Nacionalidad" class="form-label"
+                  >Nacionalidad</label
+                >
+                <input
+                  type="text"
+                  class="form-control mt-1 mb-3"
+                  id="Nacionalidad"
+                  placeholder="Ingresa tu nacionalidad"
+                  required
+                />
+              </div>
+              <div class="form-group col-12 col-md-3 col-lg-3">
+                <label for="comuna">Comuna</label>
+                <input
+                  type="text"
+                  class="form-control mt-1 mb-3"
+                  id="comuna"
+                  placeholder="Ingresa tu comuna"
+                  required
+                />
+                <label for="region" class="form-label">Región</label>
+                <select class="form-select" id="region" required>
+                  <option value="" selected disabled>
+                    Seleccione una región
+                  </option>
+                  <option value="arica">Arica y Parinacota</option>
+                  <option value="tarapaca">Tarapacá</option>
+                  <option value="antofagasta">Antofagasta</option>
+                  <option value="atacama">Atacama</option>
+                  <option value="coquimbo">Coquimbo</option>
+                  <option value="valparaiso">Valparaíso</option>
+                  <option value="metropolitana">Metropolitana</option>
+                  <option value="ohiggins">O'Higgins</option>
+                  <option value="maule">Maule</option>
+                  <option value="nuble">Ñuble</option>
+                  <option value="biobio">Biobío</option>
+                  <option value="araucania">La Araucanía</option>
+                  <option value="rios">Los Ríos</option>
+                  <option value="lagos">Los Lagos</option>
+                  <option value="aysen">Aysén</option>
+                  <option value="magallanes">Magallanes</option>
+                </select>
+                <label for="motivo" class="form-label mt-3 mb-1"
+                  >Motivo de consulta</label
+                >
+                <div class="form-check">
+                  <label class="form-check-label" for="checkFamiliar"
+                    >Familiar</label
+                  >
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="false"
+                    id="checkLaboral"
+                  />
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label" for="checkLaboral"
+                    >Laboral</label
+                  >
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="checkOtro"
+                  />
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="checkOtro"
+                  />
+                  <label class="form-check-label" for="checkOtro"
+                    >Otra materia</label
+                  >
+                </div>
+              </div>
+
+              <div class="form-group col-12 col-md-3 col-lg-3">
+                <label for="mensaje" class="form-label"
+                  >Cuentanos tu problema</label
+                >
+                <div>
+                  <textarea
+                    class="form-control"
+                    id="mensaje"
+                    rows="6"
+                    placeholder="Escribe tu mensaje aquí"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="form-btn btn">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
     <footer>
       <div class="container-fluid footer">
         <div class="footer-content container">

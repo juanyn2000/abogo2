@@ -1,3 +1,5 @@
+
+
 body {
   font-family: Arial, sans-serif;
   background-color: #2d4f2b;
@@ -88,10 +90,19 @@ header .btn {
   color: white;
   background-color: #2d4f2b;
 }
+header .btn:hover {
+  background-color: #192e1a;
+  color: white;
+  transition: background-color 0.3s ease;
+}
 header .rrss a {
   color: white;
   text-decoration: none;
   margin-right: 20px;
+}
+header .rrss a:hover {
+  color: #192e1a;
+  transition: color 0.3s ease;
 }
 .hero {
   display: flex;
@@ -252,6 +263,11 @@ header .rrss a {
 .navbar-nav {
   border-radius: 5px;
 }
+.abogado-img-container {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 20px;
+            }
 /* pantallas grandes */
 @media (min-width: 768px) {
   .content-principal {
@@ -290,4 +306,123 @@ header .rrss a {
     position: relative;
     top: -10px;
   }
-}
+  /* animacion de carrusel */
+ .carousel-fade .carousel-item {
+  transition: opacity 1.5s ease-in-out; /* Más lento para un efecto más suave */
+ }
+ /* seccion presentacion de abogado */
+ .abogado-section {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .abogado-header {
+            background: #521B0D;
+            color: white;
+        }
+        
+        .abogado-img-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        
+        .abogado-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .abogado-badge {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: var(--color-accent);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            border: 3px solid white;
+        }
+        
+        .abogado-title {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .abogado-subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+        
+        .abogado-especialidad {
+            display: inline-block;
+            background-color: var(--color-secondary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .abogado-body {
+            background-color: #521B0D;
+            color: white;
+
+        }
+        
+        .abogado-descripcion {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+        
+        .datos-contacto .list-group-item {
+            border-left: none;
+            border-right: none;
+            padding: 12px 0;
+        }
+        
+        .datos-contacto .list-group-item i {
+            color: var(--color-secondary);
+            width: 25px;
+            text-align: center;
+            margin-right: 10px;
+        }
+        
+        .experiencia-item {
+            margin-bottom: 20px;
+        }
+        
+        .experiencia-year {
+            font-weight: bold;
+            color: var(--color-primary);
+        }
+        
+        .btn-contacto {
+            background-color: var(--color-accent);
+            color: white;
+            font-weight: 600;
+            padding: 10px 25px;
+            border-radius: 30px;
+            border: none;
+            transition: all 0.3s;
+        }
+        
+        .btn-contacto:hover {
+            background-color: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+        }
+ }
